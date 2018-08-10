@@ -1,0 +1,251 @@
+body {
+    width: 100%;
+    margin: 0 auto;
+}
+a, a:hover, a:active, a:link, a:visited{
+    color: #fff !important;
+    text-decoration: none !important;
+    background: none !important;
+}
+
+.noborder {
+    background: none;
+    border: none;
+}
+input {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+textarea {
+    resize: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.noprint {
+    display: block;
+}
+.onlyprint {
+    display: none;
+}
+@media print {
+    .noprint {
+        display: none;
+    }
+    .onlyprint {
+        display: block;
+    }
+}
+
+.page {
+    margin: 0;
+    padding: 0;
+    position: static;
+    width: 100%;
+}
+
+.video{
+    margin: 0;
+    min-width: 100%;
+    position: static;
+    top: 0;
+    z-index: -1;
+}
+.video video {
+    width: 100%;
+}
+
+.main {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    margin-top: 18%;
+    color: white;
+    text-align: center;
+}
+.main .main-title {
+    font-size: 100px;
+}
+.main .main-title img {
+    width: 80px;
+}
+.main .main-type {
+    font-size: 40px;
+}
+@media screen and (max-width: 768px) {
+    .main .main-title {
+        font-size: 50px;
+    }
+    .main .main-title img {
+        width: 40px;
+    }
+    .main .main-type {
+        font-size: 20px;
+    }
+}
+.page-text {
+    padding: 45px;
+}
+.page-text h1 {
+    text-align: center;
+}
+.paragraph{
+    text-indent: 2em;
+}
+@media screen and (max-width: 768px) {
+    .page-text {
+        padding: 10px;
+    }
+}
+.page-1 {
+    background-color: #D2691E;
+}
+.page-2 {
+    background-color: #D2691E;
+    color: #fff;
+}
+.page-3 {
+    background-color: #ddd;
+}
+.page-4{
+    background-color: #f5f5f5;
+}
+.page-4 table {
+    width: 100%;
+}
+.page-4 table td {
+    width: 25%;
+    text-align: center;
+    padding: 0 20px;
+    border-left: 1px solid #000;
+    vertical-align: top;
+}
+.page-4 table td:first-child {
+    border-left: none;
+}
+.underline{
+    /*	display: inline-block;*/
+    padding-bottom: 10px;
+}
+.underline-h2{
+    border-bottom: 1px solid #000;
+}
+.underline-h1{
+    border-bottom: 1px solid #E85C37;
+}
+.hfont{
+    font-size: 2.5em;
+    /*text-decoration:underline; */
+    font-weight: normal;
+}
+body footer{
+    text-align: center;
+    vertical-align: center;
+    padding-top: 3%;
+    padding-bottom: 1%;
+}
+.footer{
+    background-color: #000;
+    color: #fff;
+}
+.icon-bar{
+    border: 1px solid white;
+}
+button#contact{
+    width: 100px;
+    height: 30px;
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font: 14px/100% Arial, Helvetica, sans-serif;
+    border-radius: 0.5em;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+.article-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: black url(img/article-bg1.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+.article {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px 6%;
+    position: absolute;
+    top: 40px;
+    left: 5%;
+    width: 90%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    background-image: url(img/article-bg2.jpg);
+    background-repeat: repeat-y;
+    background-size: 100%;
+    color: #fff;
+}
+.article-title {
+    width: 100%;
+    font-size: 40px;
+    font-weight: bold;
+}
+.article-content {
+    padding: 20px 20px;
+}
+@media screen and (max-width: 768px) {
+    .article {
+        top: 0;
+        left: 0;
+        width: 94%;
+        margin: 3%;
+        padding: 10px;
+    }
+    .article-content {
+        padding: 10px 10px;
+    }
+}
+@media print {
+    .article {
+        top: 10;
+        left: 0;
+        width: 100%;
+        margin: 30px;
+        padding: 20px;
+    }
+    .article-content {
+        padding: 10px 10px;
+    }
+    footer {
+        display: none;
+    }
+}
+table {
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+}
+.td1 {
+    width: 70px;
+    height: 30px;
+}
+.td2 {
+    /*width: 20%;*/
+}
+.td3 {
+    height: 300px;
+}
+.submit {
+    width: 80px;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+    /*background-image: url(img/article-bg2.jpg);*/
+    background: none;
+}
+.submit:active {
+    transform: translateY(4px);
+}
