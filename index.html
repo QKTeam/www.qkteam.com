@@ -14,33 +14,100 @@
     <div class="nav-bar">
         <button id="tab1" title="产品" onclick="changeTab1()" class="hvr-underline-from-right">Products</button>
         <button id="tab2" title="团队" onclick="changeTab2()" class="hvr-underline-from-right">Teams</button>
-        <a id="tab0" onclick="changeTab0()" title="主页" href="index.html"><img src="./src/logo.png" alt="Home" class="img-home hvr-hang"></a>
+        <a id="tab0" onclick="changeTab0()" title="主页" href="index.html"><img src="./src/logo.png" alt="Home" class="img-home hvr-pulse"></a>
         <button id="tab3" title="团队风采" onclick="changeTab3()" class="hvr-underline-from-left">Team culture</button>
         <button id="tab4" title="加入我们" onclick="changeTab4()" class="hvr-underline-from-left">Join us</button>
     </div>
     <div class="content">
         <div id="content-1" class="show">
             <div class="title-left">
-                <img src="./src/QK.png" alt="QK" class="img-QK animated slideInLeft faster">
+                <img src="./src/QK.png" alt="QK" class="img-QK animated fadeInLeftBig faster">
             </div>
             <div class="logo">
-                <img src="./src/logo.png" alt="Logo" class="img-logo hvr-pulse animated zoomIn faster">
+                <img src="./src/logo.png" alt="Logo" class="img-logo animated pulse infinite" onclick="changeTab5()">
             </div>
             <div class="title-right">
-                    <img src="./src/TEAM.png" alt="TEAM" class="img-TEAM animated slideInright faster">
-                </div>
+                <img src="./src/TEAM.png" alt="TEAM" class="img-TEAM animated fadeInrightBig faster">
+            </div>
         </div>
         <div id="content-2" class="hidden">
-    
+            <div class="product-1">
+                <div class="cdoj">
+                    <img src="./src/cdoj.png" alt="CDOJ APP" class="img-cdoj animated flipInX fast">
+                    <p class="animated flipInY slow">CDOJ APP</p>
+                </div>
+                <div class="wdm">
+                    <img src="./src/wdm.png" alt="微弹幕" class="img-wdm animated flipInX fast">
+                    <p class="animated flipInY slow">微弹幕</p>
+                </div>
+                <div class="z">
+                    <img src="./src/z.png" alt="祖玛蛇" class="img-z animated flipInX fast">
+                    <p class="animated flipInY slow">祖玛蛇</p>
+                </div>
+            </div>
+            <div class="product-2"> 
+                <div class="ce">
+                    <img src="./src/ce.png" alt="CodEditor" class="img-ce animated flipInX fast">
+                    <p class="animated flipInY slow">CodEditor</p>
+                </div>
+                <div class="mk">
+                    <img src="./src/mk.jpg" alt="Monkid" class="img-mk animated flipInX fast">
+                    <p class="animated flipInY slow">Monkid</p>
+                </div>
+            </div>
         </div>
         <div id="content-3" class="hidden">
-    
+
         </div>
         <div id="content-4" class="hidden">
-    
+            <div class="line-1">
+                <div class="photo-1">
+                    <img src="./src/photo-1.jpg" alt="1" class="img-photo1">
+                    <p>四十平米优质环境</p>
+                </div>
+                <div class="photo-2">
+                    <img src="./src/photo-2.jpg" alt="2" class="img-photo2">
+                    <p>两台大大的iMac</p>
+                </div>
+                <div class="photo-3">
+                    <img src="./src/photo-3.jpg" alt="3" class="img-photo3">
+                    <p>强力的柜式空调 精致的小冰箱</p>
+                </div>
+            </div>
+            <div class="line-2">
+                <div class="photo-4">
+                    <img src="./src/photo-4.jpg" alt="4" class="img-photo4">
+                    <p>琳琅满目的桌游</p>
+                </div>
+                <div class="photo-5">
+                    <img src="./src/photo-5.jpg" alt="5" class="img-photo5">
+                    <p>可供参考的精美图书</p>
+                </div>
+                <div class="photo-6">
+                    <img src="./src/photo-6.jpg" alt="6" class="img-photo6">
+                    <p>引领我们前进的发财树</p>
+                    <p>和两个不安分的小人</p>
+                </div>
+            </div>
+            <div class="line-3">
+                <div class="more">
+                    <p>还有可看电影的高清投影仪、小巧可爱的制冰机、不间断供应的零食饮料等等</p>
+                </div>
+            </div>
         </div>
         <div id="content-5" class="hidden">
 
+        </div>
+        <div id="content-6" class="hidden">
+            <div class="question">
+                <p class="animated bounceInDown fatser">晴空是什么？</p>
+            </div>
+            <div class="answer">
+                <p class="animated bounceInUp faster">晴朗的天空!<p/>
+            </div>
+            <div class="brief-introduction">
+                <p class="animated flipInY fast">晴空工作室成立于2009年, 是电子科技大学数学科学学院的一个创新团队，团队由电子科技大学本科生组成，面向校内外业务，主要从事网站开发与维护，软件开发与维护等。经过前辈们的积累，工作室现已建立了Web项目组与Android项目组并开发了诸多有价值的产品。在未来，工作室将整合资源，团队合力开发更具价值的产品。</p>
+            </div>
         </div>
     </div>
 </body>
