@@ -68,3 +68,7 @@ function changeTab4() {
     c4.className = "hidden"
     c5.className = "show"
 }
+
+setTimeout(() => {
+    router.push('/product', { id: 10, name: 'haha' });
+}, 3000);
