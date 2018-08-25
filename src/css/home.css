@@ -11,7 +11,7 @@ body {
     margin: 0% auto 0% auto;
     width: 100%;
     height: auto;
-    background-color:  rgba(0, 0, 0, 0.5);
+    background-color:  rgba(0, 0, 0, 0.3);
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     z-index: 999;
@@ -71,8 +71,20 @@ body {
     left: 0%;
     margin: 0%;
     width: 100%;
-    height: 1500px;
-    background-color: #000000;
+    height: 100%; 
+    background-image: url(../images/Sky.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.layer-1 {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    margin: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .title-left {
@@ -94,7 +106,7 @@ body {
     width:auto;
     height: auto;
     left: 53%;
-    top: -10%;
+    top: -15%;
     margin: 0%;
 }
 
@@ -105,7 +117,7 @@ body {
 
 .logo {
     position: relative;
-    top: -8%;
+    top: -13%;
     left: 0%;
     width: auto;
     height: auto;
@@ -126,7 +138,10 @@ body {
     margin: 0%;
     width: 100%;
     height: 100%;
-    background-color: #2f484c;
+    background-image: url(../images/bk-4.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: #ff9500;
 }
 
 .product-1 {
@@ -140,42 +155,49 @@ body {
     text-align: center;
 }
 
+.img-cdoj {
+    height: 188px;
+    border-radius: 30px;
+    box-shadow:5px 2px 6px #000000;
+}
+
 .cdoj {
     margin: 0% 10% 0% auto;
     text-align: center;
-    color: #de8100;
+}
+
+.cdoj p {
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .wdm {
     margin: 0% 5% 0% 5%;
     text-align: center;
-    color: #de8100;
 }
 .wdm p {
-    -webkit-animation-delay: 1s;
-    animation-delay: 1s;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .img-wdm {
     height: 188px;
-    -webkit-animation-delay: 1s;
-    animation-delay: 1s;
+    border-radius: 22px;
+    box-shadow:5px 2px 6px #000000;
 }
 
 .z {
     margin: 0% auto 0% 10%;
     text-align: center;
-    color: #de8100;
 }
 
 .z p {
-    -webkit-animation-delay: 2s;
-    animation-delay: 2s;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .img-z {
-    -webkit-animation-delay: 2s;
-    animation-delay: 2s;
+    height: 188px;
+    border-radius: 22px;
+    box-shadow:5px 2px 6px #000000;
+
 }
 
 .product-2 {
@@ -190,37 +212,33 @@ body {
 }
 
 .ce {
-    margin: 0% 3% 0% auto;
+    margin: 0% 10% 0% auto;
     text-align: center;
-    color: #de8100;
 }
 
 .ce p {
-    -webkit-animation-delay: 3s;
-    animation-delay: 3s;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .img-ce {
-    height: 256px;
-    -webkit-animation-delay: 3s;
-    animation-delay: 3s;
+    height: 188px;
+    border-radius: 30px;
+    box-shadow:5px 2px 6px #000000;
 }
 
 .mk {
-    margin: 0% auto 0% 3%;
+    margin: 0% auto 0% 10%;
     text-align: center;
-    color: #de8100;
 }
 
 .mk p {
-    -webkit-animation-delay: 4s;
-    animation-delay: 4s;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .img-mk {
-    height: 256px;
-    -webkit-animation-delay: 4s;
-    animation-delay: 4s;
+    height: 188px;
+    border-radius: 22px;
+    box-shadow:5px 2px 6px #000000;
 }
 
 #content-3 {
@@ -230,7 +248,9 @@ body {
     margin: 0%;
     width: 100%;
     height: 100%;
-    background-color: #033631;
+    background-image: url(../images/bk-2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 #content-4 {
@@ -240,7 +260,21 @@ body {
     margin: 0%;
     width: 100%;
     height: 100%;
-    background-color: #19443b;
+    background-image: url(../images/bk-1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: #effcf2;
+    text-shadow:2px 2px 3px #83d3bc;
+}
+
+.layer-2 {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    margin: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .line-1 {
@@ -257,7 +291,6 @@ body {
 .photo-1 {
     margin: 0% 3% 0% auto;
     text-align: center;
-    color: #ffffff;
 }
 
 .img-photo1 {
@@ -267,7 +300,6 @@ body {
 .photo-2 {
     margin: 0% 3% 0% 3%;
     text-align: center;
-    color: #ffffff;
 }
 
 .img-photo2 {
@@ -277,7 +309,6 @@ body {
 .photo-3 {
     margin: 0% auto 0% 3%;
     text-align: center;
-    color: #ffffff;
 }
 
 .img-photo3 {
@@ -298,7 +329,6 @@ body {
 .photo-4 {
     margin: 0% 3% 0% auto;
     text-align: center;
-    color: #ffffff;
 }
 
 .img-photo4 {
@@ -308,7 +338,6 @@ body {
 .photo-5 {
     margin: 0% 3% 0% 3%;
     text-align: center;
-    color: #ffffff;
 }
 
 .img-photo5 {
@@ -318,7 +347,6 @@ body {
 .photo-6 {
     margin: 0% auto 0% 3%;
     text-align: center;
-    color: #ffffff;
 }
 
 .img-photo6 {
@@ -340,7 +368,6 @@ body {
     font-size: 30px;
     margin: 0% auto;
     text-align: center;
-    color: #ffffff;
 }
 
 #content-5 {
@@ -350,7 +377,9 @@ body {
     margin: 0%;
     width: 100%;
     height: 100%;
-    background-color: #363636;
+    background-image: url(../images/bk-7.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 #content-6 {
@@ -360,7 +389,19 @@ body {
     margin: 0%;
     width: 100%;
     height: 100%;
-    background-color: #000000;
+    background-image: url(../images/bk-9.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.layer-3 {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    margin: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .question {
@@ -369,7 +410,7 @@ body {
     height: auto;
     top: 0%;
     left: 0%;
-    margin: 7% 0%;
+    margin: 10% 0% 0% 0%;
     text-align: center;
 }
 
@@ -377,27 +418,7 @@ body {
     margin: 0%;
     font-size: 60px;
     font-family: SimHei, Microsoft YaHei, SimSun;
-    color: #bf0a10;
-}
-
-.answer {
-    position: relative;
-    width: auto;
-    height: auto;
-    top: 0%;
-    left: 0%;
-    margin: 6.5%;
-    text-align: center;
-}
-
-.answer p {
-    margin: 0%;
-    font-size: 70px;
-    font-family: SimHei, Microsoft YaHei, SimSun;
-    color: #00bfff;
-    text-decoration: line-through;
-    -webkit-animation-delay: 1.5s;
-    animation-delay: 1.5s;
+    color: #f23207;
 }
 
 .brief-introduction {
@@ -406,7 +427,7 @@ body {
     height: auto;
     top: 0%;
     left: 0%;
-    margin: 6%;
+    margin: 10% 0% 0% 0%;
 }
 
 .brief-introduction p {
@@ -414,9 +435,9 @@ body {
     margin: 0% auto;
     font-size: 35px;
     font-family: SimHei, Microsoft YaHei, SimSun;
-    color: #fdb933;
-    -webkit-animation-delay: 3s;
-    animation-delay: 3s;
+    color: #ff8800;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
 }
 
 /* Pulse */
