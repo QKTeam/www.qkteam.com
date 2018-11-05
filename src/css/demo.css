@@ -1,0 +1,128 @@
+body {
+    min-height: 800px;
+    width: 100%;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+}
+
+.navibar {
+    width: 100%;
+    height: 30px;
+    background-color: #000000;
+    margin: 0px;
+}
+
+.shortcut {
+    float: left;
+    margin: 0% 0% 0% 2%;
+}
+
+.shortcut img {
+    height: 30px;
+    width: 30px;
+}
+
+.index {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.QK {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0% 10%;
+}
+
+.QK img {
+    width: 216px;
+    height: 150px;
+}
+
+.qkteam-logo {
+    display: flex;
+    justify-content: center;
+}
+
+.qkteam-logo img {
+    width: 200px;
+    height: 200px;
+}
+
+.Team {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0% 5%;
+}
+
+.Team img {
+    width: 300px;
+    height: 125px;
+}
+
+.products {
+    height: auto;
+    width: 100%;
+    background-color: #000000;
+    margin: 0%;
+    text-align: center;
+}
+
+.title {
+    width: 100%;
+    height: auto;
+    margin: 0%;
+    font-size: 40px;
+    line-height: 1.1;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.products-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.products-list img {
+    width: 200px;
+    height: 200px;
+    border-radius: 32px;
+    box-shadow:5px 2px 6px #000000;
+}
+
+.cdoj {
+    display: flex;
+    flex-direction: column;
+    margin: 5% 5%;
+}
+
+.z-snake {
+    display: flex;
+    flex-direction: column;
+    margin: 5% 5%;
+}
+
+.wdm {
+    display: flex;
+    flex-direction: column;
+    margin: 5% 5%;
+}
+
+.mk{
+    display: flex;
+    flex-direction: column;
+    margin: 5% 5%;
+}
+
+.ce {
+    display: flex;
+    flex-direction: column;
+    margin: 5% 5%;
+}
