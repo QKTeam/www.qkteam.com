@@ -1,0 +1,97 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    width: 100%;
+    height: 150px;
+    background-color: black;
+}
+.header img{
+    width: 50px;
+    height: 50px;
+    margin-left: 15%;
+    float: left;
+}
+.bodyer{
+    margin-left: 15%;
+}
+.description{
+    font-size: 30px;
+}
+.content{
+    margin-top: 50px;
+}
+.item{
+    width: 202px;
+    float: left;
+    margin-right: 15%;
+    margin-bottom: 50px;
+}
+/*动画*/
+.item img:hover{
+    animation: shake 2s;
+}
+
+@keyframes shake {
+    0%{
+        transform:rotate(0deg)
+    }
+    25%{
+        transform: rotate(5deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(-5deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+.item p{
+    text-align: center;
+}
+.item img{
+    width: 98%;
+    /*height: 128px;*/
+    border: black 2px solid;
+    border-radius: 10px;
+    box-shadow:2px 2px 3px #aaaaaa;
+
+}
+
+.item img:hover{
+    border: grey 2px solid;
+
+}
+/*响应式布局*/
+@media screen and (max-width: 450px) {
+    .item{
+        width: 300px;
+        margin-right: 20%;
+    }
+}
+@media screen and (min-width: 451px) and (max-width: 700px) {
+    .item{
+        width: 300px;
+        margin-left: 10%;
+        margin-right: 20%;
+    }
+    .item p{
+        text-align: center;
+    }
+}
+@media screen and (min-width: 701px) and (max-width: 1000px) {
+    .item{
+        width: 25%;
+        margin-right: 25%;
+    }
+}
+@media screen and (min-width: 1001px) and (max-width: 1280px){
+    .item{
+        width: 20%;
+        margin-right: 10%;
+    }
+}
