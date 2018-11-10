@@ -1,0 +1,19 @@
+.btn {
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 15px;
+    background: rgba(0, 0, 0, 1);
+    border: 0%;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-success {
+    color: rgb(254, 144, 23);
+}
+
+.btn-success:hover {
+    color: white;
+    background: rgb(254, 144, 23);
+    font-size: 15px;
+}
