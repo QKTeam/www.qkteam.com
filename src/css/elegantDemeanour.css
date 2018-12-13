@@ -1,11 +1,11 @@
-.groups{
+.elegant-demeanour{
     height: auto;
     width: 100%;
     margin: 0%;
     text-align: center;
 }
 
-.groups-title{
+.ed-title {
     width: 100%;
     height: auto;
     padding: 10px 0%;
@@ -17,12 +17,12 @@
     color: #FFFFFF;
 }
 
-.groups-title p{
+.ed-title p {
     margin: 0%;
 }
 
-.groups-content{
-    margin-top: 50px;
+.content{
+    margin-top: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,26 +33,28 @@
     background-color: #ffffff;
 }
 
-.groups-item{
+.item{
+    width: 300px;
     margin: 30px 15%;
-    width: 15%;
     text-align: center;
 }
 
-.groups-item p {
-    font-size: 18px;
+.item p{
+    font-size: 20px;
 }
 
-.groups-item img{
+.item img{
     width: 100%;
+    border-radius: 10px;
+    box-shadow:5px 2px 6px #000000;
 }
 
-@media screen and (max-width: 450px){ 
-    .groups-item{
-        width: 60%;
+@media screen and (max-width: 450px) {
+    .item{
+        width: 240px;
     }
 
-    .groups-title{
+    .ed-title {
         width: 100%;
         height: auto;
         padding: 10px 0%;
@@ -62,5 +64,11 @@
         font-weight: 600;
         background-color: rgba(254, 144, 23);
         color: #FFFFFF;
+    }
+}
+
+@media screen and (min-width: 451px){
+    .item{
+        width: 300px;
     }
 }
