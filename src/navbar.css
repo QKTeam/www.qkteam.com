@@ -4,22 +4,21 @@ nav ul {
   align-items: center;
 }
 
-nav#navbar-list ul {
-  height: 60px;
+nav#outernav ul {
   color: rgba(255, 255, 255, .8);
   background: rgba(0, 0, 0, .7);
 }
 
-nav#navbar-list li {
+nav#outernav li {
   position: relative;
   transition: color .4s;
 }
 
-nav#navbar-list li:hover {
+nav#outernav li:hover {
   color: #66ccff;
 }
 
-nav#navbar-list li:not(#logo)::after {
+nav#outernav li:not(#outerlogo)::after {
   content: "";
   background: #66ccff;
   height: 2px;
@@ -30,7 +29,7 @@ nav#navbar-list li:not(#logo)::after {
   transition: all .4s; 
 }
 
-nav#navbar-list li:not(#logo):hover::after {
+nav#outernav li:not(#outerlogo):hover::after {
   width: 120%;
   left: -10%;
 }
