@@ -1,10 +1,10 @@
 nav ul {
   display: flex;
-  justify-content: space-around;
   align-items: center;
 }
 
 nav#outernav ul {
+  justify-content: space-around;
   color: rgba(255, 255, 255, .8);
   background: rgba(0, 0, 0, .7);
 }
@@ -32,4 +32,25 @@ nav#outernav li:not(#outerlogo)::after {
 nav#outernav li:not(#outerlogo):hover::after {
   width: 120%;
   left: -10%;
+}
+
+nav#innernav ul {
+  padding: 5px 36px;
+  justify-content: space-between;
+  color: rgba(255, 255, 255, .7);
+  background: rgba(0, 0, 0, .6);
+}
+
+nav#innernav li {
+  display: flex;
+  align-items: center;
+}
+
+nav#innernav #innerlogo {
+  margin-right: 10px;
+}
+
+nav#innernav #innerwechat {
+  margin-right: 30px;
+  cursor: pointer;
 }
