@@ -16,3 +16,11 @@ a {
   color: inherit;
   cursor: pointer;
 }
+
+footer {
+  display: block;
+  padding: 80px 0;
+  text-align: center;
+  color: rgba(255, 255, 255, .6);
+  background: rgba(0, 0, 0, .8);
+}
