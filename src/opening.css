@@ -1,0 +1,51 @@
+#opening {
+    height: 600px;
+    background-image: "";
+}
+
+.barrageInOpening {
+    text-align: center;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 20px;
+    position: absolute;
+    z-index: 2;
+}
+
+@keyframes fade-inLeft {
+    from { opacity: 0; transform: translateX(-300px); }
+    to { opacity: 1; transform: translateX(0px); }
+}
+
+@keyframes fade-inRight {
+    from { opacity: 0; transform: translateX(-700px) }
+    to { opacity: 1; transform: translateX(0px) }
+}
+
+.fadeInQK {
+    width: 240px;
+    height: 200px;
+    padding-top: 80px;
+    padding-left: 300px;
+    display: block;
+}
+
+.leftAnimate {
+    animation: fade-inLeft 2s;
+}
+
+.hiddenInOpening {
+    opacity: 0;
+}
+
+.fadeInTEAM {
+    width: 480px;
+    height: 200px;
+    padding-top: 80px;
+    padding-left: 700px;
+    display: block;
+}
+
+.rightAnimate {
+    animation: fade-inRight 2s;
+}
