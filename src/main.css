@@ -5,11 +5,16 @@
 html, body {
   min-height: 100%;
   scroll-behavior: smooth;
+  user-select: text;
 }
 
 html, body, ul, li {
   margin: 0;
   padding: 0;
+}
+
+::selection {
+  background-color: pink;
 }
 
 li {

@@ -135,3 +135,9 @@ function onLoaded() {
 }
 
 window.onload = onLoaded();
+
+document.addEventListener("dragstart", function(e){
+    if(e.target.tagName == "IMG"){
+        return false;
+    }
+})
