@@ -118,8 +118,10 @@ function onLoadedOpening() {
 
 function onLoadedTeamIntroduction() {
     var teamIntroduceText = document.getElementById("introductionText");
+    var teamIntroduceImg = teamIntroduceText.querySelector("img");
     var rect = document.getElementById("introduction").getBoundingClientRect();
     if(rect.bottom - window.innerHeight * 1.5 <= 0 && rect.top >= 0) {
+        teamIntroduceImg.classList.add("introductionImgAnimate");
         teamIntroduceText.classList.add("fadeInIntroductionText");
         teamIntroduceText.classList.remove("hiddenInIntroduction");
     }
@@ -131,13 +133,13 @@ function onScroll() {
 
 function onLoaded() {
     window.addEventListener("scroll", onScroll);
+    document.addEventListener("dragstart", function(e) {
+        if(e.target.tagName == "IMG"){
+            e.preventDefault();
+            return false;
+        }
+    });
     onLoadedOpening();
 }
 
 window.onload = onLoaded();
-
-document.addEventListener("dragstart", function(e){
-    if(e.target.tagName == "IMG"){
-        return false;
-    }
-})
