@@ -4,7 +4,7 @@
 	<meta charset="utf-8" />
 	<title>QKteam</title>
 	<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-	<link rel="stylesheet" type="text/css" href="src/main.css" />
+	<link rel="stylesheet" type="text/css" href="src/css/main.css" />
 </head>
 <body>
 	<nav id="outernav">
@@ -17,7 +17,7 @@
 		</li>
 		<li id="outerlogo">
 			<a href="#opening">
-			<img src="resources/qkteam.png" width="50px" ondragstart="return false"/>
+			<img src="resources/qkteam.png" width="50px"/>
 			</a>
 		</li>
 		<li>
@@ -31,11 +31,11 @@
 	<nav id="innernav">
 		<ul>
 		<li>
-			<img id="innerlogo" src="resources/qkteam.png" width="40px" ondragstart="return false"/>
+			<img id="innerlogo" src="resources/qkteam.png" width="40px"/>
 			<span>晴空工作室</span>
 		</li>
 		<li id="innerextend">
-			<img id="innerwechat" src="resources/wechat.svg" width="28px" ondragstart="return false"/>
+			<img id="innerwechat" src="resources/wechat.svg" width="28px"/>
 			<span>
 			<a href="">加入我们</a>
 			</span>
@@ -43,12 +43,12 @@
 		</ul>
 	</nav>
 	<div id="opening">
-		<img class="fadeInQK hiddenInOpening" src="resources/QK.png" ondragstart="return false">
-		<img class="fadeInTEAM hiddenInOpening" src="resources/TEAM.png" ondragstart="return false">
+		<img class="fadeInQK hiddenInOpening" src="resources/QK.png"/>
+		<img class="fadeInTEAM hiddenInOpening" src="resources/TEAM.png"/>
 	</div>
 	<div id="introduction">
 		<div id="introductionText" class="introductionText hiddenInIntroduction">
-			<img class="introductionImg" src="resources/qkteam.png" ondragstart="return false"/>
+			<img class="introductionImg" src="resources/qkteam.png"/>
 			<p>晴空工作室成立于2009年，是电子科技大学数学科学学院的一个创新团队</p>
 			<p>团队由电子科技大学本科生组成，面向校内外业务</p>
 			<p>主要从事网站开发和维护，软件开发与维护等</p>
@@ -56,10 +56,28 @@
 			<p>在未来，工作室将整合资源，团队合力开发更具价值的产品</p>
 		</div>
 	</div>
+	<div id="products">
+		<div id="productsContainer" class="hiddenProducts">
+			<div class="stage">
+				<ul class="threedbox">
+					<li><img class="productsImg" src="resources/z.png"></li>
+					<li><img class="productsImg" src="resources/wdm.png"></li>
+					<li><img class="productsImg" src="resources/cdoj.png"></li>
+					<li><img class="productsImg" src="resources/mk.png"></li>
+					<li><img class="productsImg" src="resources/ce.png"></li>
+					<li>敬请期待……</li>
+				</ul>
+			</div>
+			<div class="productsText">
+				<p>微弹幕、祖玛蛇、CDOJ APP、CodeEditer、Monkid 这些都是由工作室开发的项目</p>
+				<p>我们还在努力 未来值得期待……</p>
+			</div>
+		</div>
+	</div>
 	<footer>
 		<p>Copyright &copy; 2019 晴空工作室 All rights reserved.</p>
 		<a href="">加入我们</a>
 	</footer>
-	<script src="src/main.js"></script>
+	<script src="src/js/main.js"></script>
 </body>
 </html>

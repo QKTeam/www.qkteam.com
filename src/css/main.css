@@ -1,6 +1,7 @@
 @import url(./navbar.css);
 @import url(./opening.css);
 @import url(./introduction.css);
+@import url(./products.css);
 
 html, body {
   min-height: 100%;

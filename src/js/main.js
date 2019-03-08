@@ -127,8 +127,18 @@ function onLoadedTeamIntroduction() {
     }
 }
 
+function onLoadedProducts() {
+    var productsContainer = document.getElementById("productsContainer");
+    var rect = document.getElementById("products").getBoundingClientRect();
+    if(rect.bottom - window.innerHeight * 1.5 <= 0 && rect.top >= 0) {
+        productsContainer.classList.add("fadeInProducts");
+        productsContainer.classList.remove("hiddenProducts");
+    }
+}
+
 function onScroll() {
     onLoadedTeamIntroduction();
+    onLoadedProducts();
 }
 
 function onLoaded() {

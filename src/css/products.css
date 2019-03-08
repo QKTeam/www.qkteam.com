@@ -1,0 +1,93 @@
+@keyframes moves {
+    0% { transform: rotateX(0deg) }
+    25% { transform: rotateX(180deg) }
+    50% { transform: rotateX(360deg) rotateY(0deg) }
+    75% { transform: rotateX(360deg) rotateY(180deg) }
+    100% { transform: rotateX(360deg) rotateY(360deg) }
+}
+
+@keyframes fadeProduct {
+    from { opacity: 0; transform: translateY(100px) }
+    to { opacity: 1; transform: translateY(0px) }
+}
+
+.fadeInProducts {
+    animation: fadeProduct 2s;
+}
+
+#products {
+    width: 100%;
+    height: 600px;
+    background-color: rgb(82, 82, 82);
+    background-image: "";
+}
+
+.hiddenProducts {
+    opacity: 0;
+}
+
+.stage {
+    position: relative;
+    width: 500px;
+    height: 400px;
+    margin: auto;
+    perspective: 800px;
+}
+
+.threedbox {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    margin-top: 100px;
+    margin-left: 150px;
+    transform-style: preserve-3d;
+    animation: moves 8s linear infinite;
+}
+
+.productsImg {
+    width: 200px;
+    height: 200px;
+}
+
+.threedbox>li {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    color: white;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.threedbox>li:nth-child(1) {
+    transform: translateZ(-100px);
+}
+
+.threedbox>li:nth-child(2) {
+    transform: translateZ(100px);
+}
+
+.threedbox>li:nth-child(3) {
+    transform: rotateX(90deg) translateZ(100px);
+}
+
+.threedbox>li:nth-child(4) {
+    transform: rotateX(-90deg) translateZ(100px);
+}
+
+.threedbox>li:nth-child(5) {
+    transform: rotateY(90deg) translateZ(100px);
+}
+
+.threedbox>li:nth-child(6) {
+    background-color: pink;
+    transform: rotateY(-90deg) translateZ(100px);
+    border-radius: 30px;
+}
+
+.productsText {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 24px;
+}
