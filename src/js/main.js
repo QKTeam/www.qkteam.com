@@ -7,6 +7,10 @@ var line1AddBarrageSwitch = true;
 var line2AddBarrageSwitch = true;
 var line3AddBarrageSwitch = true;
 var maxBarrageNum = 10;
+// var introduceSwitch = false;
+// var productsSwitch = false;
+// var teamsSwitch = false;
+// var aboutSwitch = false;
 
 setInterval("checkBarrage()", 1000);
 setInterval("createBarrage()", 1000);
@@ -125,6 +129,7 @@ function onLoadedTeamIntroduction() {
         teamIntroduceText.classList.add("fadeInIntroductionText");
         teamIntroduceText.classList.remove("hiddenInIntroduction");
     }
+    // introduceSwitch = true;
 }
 
 function onLoadedProducts() {
@@ -134,11 +139,37 @@ function onLoadedProducts() {
         productsContainer.classList.add("fadeInProducts");
         productsContainer.classList.remove("hiddenProducts");
     }
+    // productsSwitch = true;
+}
+
+function onLoadedTeams() {
+    var teams = document.getElementById("teams");
+    var rect = teams.getBoundingClientRect();
+    if(rect.bottom - window.innerHeight * 1.5 <= 0 && rect.top >= 0) {
+        let index = 0;
+        var fadeteams = setInterval(function() {
+            if(index >= teams.childElementCount) {
+                clearInterval(fadeteams);
+            }
+            else {
+                teams.children[index].classList.add("teamanimation");
+                teams.children[index++].classList.remove("hiddenTeam");
+            }
+        },500);
+    }
+    // teamsSwitch = true;
 }
 
 function onScroll() {
-    onLoadedTeamIntroduction();
-    onLoadedProducts();
+    // if(!introduceSwitch) {
+        onLoadedTeamIntroduction();
+    // }
+    // if(!productsSwitch) {
+        onLoadedProducts();
+    // }
+    // if(!teamsSwitch) {
+        onLoadedTeams();
+    // }
 }
 
 function onLoaded() {

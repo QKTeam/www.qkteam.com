@@ -60,29 +60,33 @@
 }
 
 .threedbox>li:nth-child(1) {
+    background-color: rgb(255, 205, 189);
     transform: translateZ(-100px);
 }
 
 .threedbox>li:nth-child(2) {
+    background-color: rgb(255, 255, 255);
     transform: translateZ(100px);
 }
 
 .threedbox>li:nth-child(3) {
+    background-color: rgb(255, 149, 0);
     transform: rotateX(90deg) translateZ(100px);
 }
 
 .threedbox>li:nth-child(4) {
+    background-color: rgb(255, 255, 255);
     transform: rotateX(-90deg) translateZ(100px);
 }
 
 .threedbox>li:nth-child(5) {
+    background-color: rgb(0, 163, 241);
     transform: rotateY(90deg) translateZ(100px);
 }
 
 .threedbox>li:nth-child(6) {
     background-color: pink;
     transform: rotateY(-90deg) translateZ(100px);
-    border-radius: 30px;
 }
 
 .productsText {
