@@ -60,11 +60,11 @@ div:nth-child(4) {
     text-align: center;
 }
 
-h4 {
+.team>h4 {
     font-weight: 1000;
     font-size: 20px;
 }
-p {
+.team>p {
     font-size: 15px;
 }
 .team:hover {
